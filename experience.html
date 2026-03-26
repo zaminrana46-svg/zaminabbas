@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience - Zamin Abbas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursorDot" id="cursorDot"></div>
+  <div class="smokeWrap" id="smokeWrap" aria-hidden="true">
+    <div class="smokeNoise"></div>
+    <span class="smokeBlob b1 smokeVerticalTop" id="blob1"></span>
+    <span class="smokeBlob b3 smokeVerticalTop" id="blob3"></span>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <img src="zma-logo.png" alt="ZMA Logo" style="block-size:55px; inline-size:auto;">
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="skills.html" data-nav>Skills</a>
+        <a href="projects.html" data-nav>Projects</a>
+        <a href="services.html" data-nav>Services</a>
+        <a href="experience.html" data-nav class="active">Experience</a>
+        <a href="contact.html" data-nav>Contact</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:10px">
+        <a class="btn primary" href="contact.html">BOOK NOW</a>
+        <button class="menuBtn" id="menuBtn" aria-label="Open menu">Menu</button>
+      </div>
+    </div>
+    <div class="mobile" id="mobileMenu" style="display:none">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding:80px 0;">
+      <div class="container">
+        <h1 class="sectionTitle">Experience</h1>
+        <p class="sectionDesc" style="margin-top:12px;">My professional journey in digital marketing and web development.</p>
+
+        <div style="max-width:700px; margin:50px auto 0;">
+          <div class="timeline">
+
+            <div class="timeline-item reveal anim-left" data-anim>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content panel pad">
+                <h3>Freelance WordPress Developer & Local SEO Expert</h3>
+                <p class="timeline-date">📅 2021 – Present</p>
+                <p style="color:var(--muted); line-height:1.7;">Working with local businesses across the US and Pakistan to improve their online visibility, build WordPress websites, and implement data-driven SEO strategies.</p>
+                <ul class="bullets" style="margin-top:10px;">
+                  <li>50+ clients served across multiple industries</li>
+                  <li>Specialized in Google Business Profile optimization</li>
+                  <li>WordPress sites built from scratch</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal anim-right" data-anim>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content panel pad">
+                <h3>Digital Marketing Specialist</h3>
+                <p class="timeline-date">📅 2020 – 2021</p>
+                <p style="color:var(--muted); line-height:1.7;">Managed social media accounts, ran paid ad campaigns, and developed content strategies for small and medium businesses.</p>
+                <ul class="bullets" style="margin-top:10px;">
+                  <li>Facebook & Instagram ad campaigns</li>
+                  <li>Content calendar management</li>
+                  <li>Analytics & performance reporting</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal anim-left" data-anim>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content panel pad">
+                <h3>SEO Trainee & Content Writer</h3>
+                <p class="timeline-date">📅 2019 – 2020</p>
+                <p style="color:var(--muted); line-height:1.7;">Started career learning SEO fundamentals, keyword research, and writing SEO-optimized content for various niches.</p>
+                <ul class="bullets" style="margin-top:10px;">
+                  <li>Keyword research & on-page optimization</li>
+                  <li>Blog writing & content strategy</li>
+                  <li>Google Analytics & Search Console</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <span>© 2024 Zamin Abbas - WordPress Developer</span>
+      <span>Local SEO • WordPress • Digital Marketing</span>
+    </div>
+  </footer>
+
+  <a class="wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="waIcon" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2a10 10 0 0 0-8.66 15.02L2 22l5.12-1.3A10 10 0 1 0 12 2Z" stroke="rgba(34,197,94,.9)" stroke-width="1.6"/>
+        <path d="M9.2 8.9c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.2 5 4.3 2.5.9 3 .7 3.6.7.6-.1 2-.8 2.3-1.5.3-.7.3-1.3.2-1.5-.1-.2-.3-.3-.6-.4l-1.8-.9c-.2-.1-.5-.1-.7.2l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.3-.8-.7-1.3-1.6-1.4-1.9-.1-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4-.1-.6l-.8-2Z" fill="rgba(34,197,94,.9)"/>
+      </svg>
+    </span>
+    <span><strong>WhatsApp</strong><small>Quick chat</small></span>
+  </a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# robots.txt for zaminabbas.com
+# Generated for Zamin Abbas Portfolio Website
+
+User-agent: *
+Allow: /
+
+# Block junk files from being crawled
+Disallow: /cleanup.py
+Disallow: /cleanup2.py
+Disallow: /fix_html.ps1
+Disallow: /index_old.html
+Disallow: /test.html
+Disallow: /animated-cards.html
+Disallow: /introduction-section.html
+
+# Sitemap location - tells Google where your sitemap is
+Sitemap: https://www.zaminabbas.com/sitemap.xml

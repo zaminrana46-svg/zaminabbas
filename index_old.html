@@ -1,0 +1,536 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zamin Abbas - Front-End Developer & UI/UX Designer</title>
+  <meta name="description" content="Zamin Abbas - Front-End Developer and UI/UX Designer specializing in modern web technologies, responsive design, and user experience." />
+  <meta name="theme-color" content="#06142d" />
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+
+<body>
+  <!-- Animated Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursorDot" id="cursorDot"></div>
+
+  <!-- Colorful smoke background (moves with cursor) -->
+  <div class="smokeWrap" id="smokeWrap" aria-hidden="true">
+    <div class="smokeNoise"></div>
+    <span class="smokeBlob b1 smokeVerticalTop" id="blob1"></span>
+    <span class="smokeBlob b2 smokeVerticalBottom" id="blob2"></span>
+    <span class="smokeBlob b3 smokeVerticalTop" id="blob3"></span>
+    <span class="smokeBlob b4 smokeVerticalBottom" id="blob4"></span>
+  </div>
+
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <img src="zma-logo.png" alt="ZMA Logo" style="block-size: 55px; inline-size: auto;">
+      </a>
+
+      <!-- Menu (Home / About / Skills / Projects / Services / Experience / Contact) -->
+      <nav class="links" aria-label="Primary navigation">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="skills.html" data-nav>Skills</a>
+        <a href="projects.html" data-nav>Projects</a>
+        <a href="services.html" data-nav>Services</a>
+        <a href="experience.html" data-nav>Experience</a>
+        <a href="contact.html" data-nav>Contact</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:10px">
+        <a class="btn primary" href="#booking">BOOK NOW </a>
+        <button class="themeToggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☀️</button>
+        <button class="menuBtn" id="menuBtn" aria-label="Open menu">Menu</button>
+      </div>
+    </div>
+
+      <div class="mobile" id="mobileMenu" style="display:none">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+  </header>
+
+  <main id="home" class="container">
+    <!-- HERO -->
+    <section class="hero slider-hero">
+      <div class="slider">
+        <div class="slide active" style="background-image:url('10.png')"></div>
+      </div>
+      <div class="slider-overlay"></div>
+
+      <div class="hero-content">
+        <small class="label">WORDPRESS DEVELOPER & LOCAL SEO EXPERT</small>
+        <h1 class="h1">
+          <span class="pop">hi iam zamin abbas</span>
+        </h1>
+        <p class="lead">I help local businesses dominate search results and build high-converting websites that drive real growth.</p>
+        <div class="cta-group">
+          <a class="btn primary" href="contact.html">Get Your Free Strategy Session</a>
+          <a class="btn outline" href="projects.html">View My Results</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+      <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+        <span>© 2024 Zamin Abbas - Front-End Developer</span>
+        <span>HTML • CSS • JavaScript • React • UI/UX Design</span>
+      </div>
+    </footer>
+        <div class="grid about-grid">
+          <div class="about-text">
+            <p class="sectionDesc">I'm Zamin Abbas, a WordPress Developer and Local SEO Expert with over 3 years of experience helping local businesses thrive online. I don't just build websites or optimize for search—I solve real business problems. Whether it's creating a fast, user-friendly site that converts visitors into customers or dominating local search results to attract more leads, I focus on delivering measurable results that grow your business.</p>
+            <p class="sectionDesc">My approach combines technical expertise with strategic thinking. I work closely with clients to understand their unique challenges and goals, then implement solutions that drive tangible outcomes like increased traffic, higher rankings, and more sales.</p>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">300%</span>
+                <span class="stat-label">Avg. Traffic Increase</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="1.png" alt="Zamin Abbas" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="reveal anim-left" data-anim>
+      <div class="container">
+        <h2 class="sectionTitle">Technical Expertise</h2>
+        <p class="sectionDesc">Proven skills that deliver results for local businesses</p>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>WordPress Development</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <span class="skill-name">Custom Theme Development</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">E-commerce Solutions</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Performance Optimization</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 92%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">SEO-Ready Architecture</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Local SEO & Digital Marketing</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <span class="skill-name">Google Business Profile</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 96%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Local Keyword Research</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 93%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Citation Building</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 91%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Review Management</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 89%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <span class="skill-name">Google Analytics & Search Console</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 94%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Schema Markup & Structured Data</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 87%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Page Speed Optimization</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Mobile-First Development</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+      </div>
+
+      <div class="industry-grid">
+        <article class="industry-card reveal anim-left" data-anim>
+          <h3>HVAC</h3>
+          <p>Seasonality and emergency searches mean we prioritize fast-loading pages, schematic FAQs, and GBP posts timed around weather events.</p>
+          <ul class="bullets">
+            <li>Seasonal keyword targeting</li>
+            <li>Fast-loading service area pages</li>
+            <li>Weather-triggered GBP posts</li>
+          </ul>
+          <p><strong>Strategy focuses on immediate visibility during service spikes and turning clicks into booked service calls.</strong></p>
+        </article>
+
+        <article class="industry-card reveal anim-right" data-anim>
+          <h3>Plumbing</h3>
+          <p>Plumbing relies on trust; listings highlight licensed status and reviews while local keywords target urgent fix queries.</p>
+          <ul class="bullets">
+            <li>Trust signal optimization</li>
+            <li>Licensed status prominence</li>
+            <li>Emergency keyword focus</li>
+          </ul>
+          <p><strong>Higher call volume for same‑day repairs and lasting lead pipelines.</strong></p>
+        </article>
+
+        <article class="industry-card reveal anim-bottom" data-anim>
+          <h3>Roofing</h3>
+          <p>Roofers need geo‑specific content for storm damage and inspection terms; GBP galleries show recent jobs to build credibility.</p>
+          <ul class="bullets">
+            <li>Storm damage keywords</li>
+            <li>Project photo galleries</li>
+            <li>Geo-targeted content</li>
+          </ul>
+          <p><strong>Visibility gains measured in scheduled estimates and contract leads.</strong></p>
+        </article>
+
+        <article class="industry-card reveal anim-left" data-anim>
+          <h3>Home Services</h3>
+          <p>From landscaping to pest control, we adapt keyword sets and citation networks to niche sub‑services in each neighborhood.</p>
+          <ul class="bullets">
+            <li>Niche keyword adaptation</li>
+            <li>Citation network building</li>
+            <li>Neighborhood dominance</li>
+          </ul>
+          <p><strong>Focus on broad service-area dominance and consistent inbound inquiries.</strong></p>
+        </article>
+
+        <article class="industry-card reveal anim-right" data-anim>
+          <h3>Local Retail Businesses</h3>
+          <p>Retail strategy emphasizes GBP product listings, local inventory schema, and promotions that drive foot traffic from map searches.</p>
+          <ul class="bullets">
+            <li>Product listing optimization</li>
+            <li>Promotional timing</li>
+            <li>Foot traffic conversion</li>
+          </ul>
+          <p><strong>Success measured in store visits and walk‑in conversions.</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="reveal anim-left" data-anim>
+      <div class="container">
+        <h2 class="sectionTitle">Results That Speak</h2>
+        <p class="sectionDesc">Real projects, real growth for local businesses</p>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="2.png" alt="HVAC Company Project">
+            </div>
+            <div class="project-content">
+              <h3>HVAC Company Growth</h3>
+              <p>Increased Google Business Profile views by 300% and generated 50+ new leads per month through comprehensive Local SEO optimization and strategic GBP management.</p>
+              <div class="project-tech">
+                <span>Local SEO</span>
+                <span>GBP Optimization</span>
+                <span>Content Strategy</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn small">View Case Study</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="3.png" alt="Restaurant Website Redesign">
+            </div>
+            <div class="project-content">
+              <h3>Restaurant Website Redesign</h3>
+              <p>Complete WordPress redesign resulting in 40% increase in online orders, improved mobile experience, and better user engagement across all devices.</p>
+              <div class="project-tech">
+                <span>WordPress</span>
+                <span>E-commerce</span>
+                <span>Mobile Optimization</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn small">View Case Study</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="1.png" alt="Plumbing Business SEO">
+            </div>
+            <div class="project-content">
+              <h3>Plumbing Business SEO Success</h3>
+              <p>Optimized website speed and on-page SEO, leading to 25% boost in organic search traffic and improved local rankings for emergency plumbing services.</p>
+              <div class="project-tech">
+                <span>On-Page SEO</span>
+                <span>Performance Optimization</span>
+                <span>Local Rankings</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn small">View Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="grid cards2">
+        <div class="panel pad reveal anim-left" data-anim>
+          <h3>HVAC Contractor</h3>
+          <p><strong>Challenge:</strong> A midsize firm in a competitive suburb had low map visibility during peak demand and inconsistent GBP information.</p>
+          <p><strong>Strategy Implemented:</strong> Conducted a full market audit, mapped seasonal keyword demand, and developed a content calendar tied to weather cycles.</p>
+          <p><strong>Optimization Process:</strong> Updated GBP weekly with service-area posts, built local citations, and restructured service landing pages with geo-modified headers.</p>
+          <p><strong>Long-Term Growth Focus:</strong> Emphasis on establishing domain authority so rankings rose steadily, resulting in a reliable flow of service calls each season.</p>
+        </div>
+        <div class="panel pad reveal anim-bottom" data-anim>
+          <h3>Plumbing Services</h3>
+          <p><strong>Challenge:</strong> A small family-run plumber struggled to appear for urgent repair queries and had sparse reviews.</p>
+          <p><strong>Strategy Implemented:</strong> Rolled out a review capture workflow, enhanced the GBP with detailed service listings, and targeted “emergency” and “same-day” keywords.</p>
+          <p><strong>Optimization Process:</strong> Created localized FAQ pages addressing common problems, cleaned up duplicate citations, and monitored GBP insights to tweak hours and descriptions.</p>
+          <p><strong>Long-Term Growth Focus:</strong> The program prioritized trust signals and review velocity to maintain a top-three map position for key terms over twelve months.</p>
+        </div>
+        <div class="panel pad reveal anim-right" data-anim>
+          <h3>Roofing Company</h3>
+          <p><strong>Challenge:</strong> A roofer in a storm-prone region was overlooked in map results despite competitive pricing.</p>
+          <p><strong>Strategy Implemented:</strong> Developed a storm-response page, optimized GBP with project photos, and targeted retrieval keywords like “roof inspection near me.”</p>
+          <p><strong>Optimization Process:</strong> Added structured data for local events, built partnerships for citation links, and regularly posted community outreach updates on GBP.</p>
+          <p><strong>Long-Term Growth Focus:</strong> Strategy centered on building a reputation that could weather algorithm changes while delivering consistent estimate requests and contract leads.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="reveal anim-left" data-anim>
+      <div class="container">
+        <h2 class="sectionTitle">Services That Drive Results</h2>
+        <p class="sectionDesc">Specialized solutions for local business growth</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>WordPress Development</h3>
+            <p>Custom WordPress websites that convert visitors into customers. From responsive designs to e-commerce solutions, I build platforms that grow your business.</p>
+            <ul class="service-features">
+              <li>Custom theme development</li>
+              <li>E-commerce integration</li>
+              <li>Mobile-first responsive design</li>
+              <li>Performance optimization</li>
+              <li>SEO-ready architecture</li>
+            </ul>
+            <div class="service-results">
+              <strong>Typical Results:</strong> 40-60% increase in conversion rates, improved user experience, and scalable growth platforms.
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>Local SEO Optimization</h3>
+            <p>Dominate your local market with proven SEO strategies that put your business in front of customers when they search for your services.</p>
+            <ul class="service-features">
+              <li>Google Business Profile optimization</li>
+              <li>Local keyword targeting</li>
+              <li>Citation building & management</li>
+              <li>Review acquisition strategies</li>
+              <li>Local content creation</li>
+            </ul>
+            <div class="service-results">
+              <strong>Typical Results:</strong> 200-400% increase in local search visibility, more qualified leads, and improved online reputation.
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Complete Digital Solutions</h3>
+            <p>End-to-end digital marketing packages that combine website development with ongoing SEO management for maximum business impact.</p>
+            <ul class="service-features">
+              <li>Website + SEO packages</li>
+              <li>Monthly reporting & optimization</li>
+              <li>Content strategy & creation</li>
+              <li>Analytics & conversion tracking</li>
+              <li>Ongoing support & maintenance</li>
+            </ul>
+            <div class="service-results">
+              <strong>Typical Results:</strong> Comprehensive online presence with measurable ROI, sustained growth, and competitive advantage.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="reveal anim-right" data-anim>
+      <div class="container">
+        <h2 class="sectionTitle">Why Choose Me</h2>
+        <p class="sectionDesc">What sets my services apart</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Proven Results for Local Businesses</h3>
+              <span class="timeline-date">Track Record</span>
+              <p>I've helped over 50 local businesses increase their online visibility and revenue through strategic WordPress development and Local SEO.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Personalized Approach</h3>
+              <span class="timeline-date">Custom Solutions</span>
+              <p>Every business is unique. I take time to understand your specific goals and challenges, then create tailored solutions that deliver real results.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Transparent Communication</h3>
+              <span class="timeline-date">Clear Process</span>
+              <p>You'll always know what's happening with your project. Regular updates, detailed reports, and honest feedback keep you informed every step of the way.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Latest Best Practices</h3>
+              <span class="timeline-date">Up-to-Date Expertise</span>
+              <p>I stay current with the latest WordPress updates, SEO algorithms, and web technologies to ensure your business gets cutting-edge solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="reveal anim-bottom" data-anim>
+      <div class="container">
+        <h2 class="sectionTitle">Ready to Grow Your Business?</h2>
+        <p class="sectionDesc">Let's discuss how I can help you dominate your local market and build a website that converts.</p>
+        <div class="grid contact-grid">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell me about your project</label>
+                <textarea id="message" name="message" required placeholder="Describe your business goals and current challenges..."></textarea>
+              </div>
+              <button type="submit" class="btn primary">Get Your Free Consultation</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h4>Email</h4>
+              <p>zamin@example.com</p>
+            </div>
+            <div class="contact-item">
+              <h4>Phone</h4>
+              <p>+92 300 1234567</p>
+            </div>
+            <div class="contact-item">
+              <h4>Location</h4>
+              <p>Multan, Pakistan</p>
+            </div>
+            <div class="contact-item">
+              <h4>Response Time</h4>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+        <span>© 2024 Zamin Abbas - Front-End Developer</span>
+        <span>HTML • CSS • JavaScript • React • UI/UX Design</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- WhatsApp floating button -->
+  <a class="wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="waIcon" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.66 15.02L2 22l5.12-1.3A10 10 0 1 0 12 2Z" stroke="rgba(34,197,94,.9)" stroke-width="1.6"/>
+        <path d="M9.2 8.9c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.2 5 4.3 2.5.9 3 .7 3.6.7.6-.1 2-.8 2.3-1.5.3-.7.3-1.3.2-1.5-.1-.2-.3-.3-.6-.4l-1.8-.9c-.2-.1-.5-.1-.7.2l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.3-.8-.7-1.3-1.6-1.4-1.9-.1-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4-.1-.6l-.8-2Z" fill="rgba(34,197,94,.9)"/>
+      </svg>
+    </span>
+    <span>
+      <strong>WhatsApp</strong>
+      <small>Quick chat</small>
+    </span>
+  </a>
+
+
+</body>
+</html>
+
+

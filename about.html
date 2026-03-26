@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About - Zamin Abbas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursorDot" id="cursorDot"></div>
+  <div class="smokeWrap" id="smokeWrap" aria-hidden="true">
+    <div class="smokeNoise"></div>
+    <span class="smokeBlob b1 smokeVerticalTop" id="blob1"></span>
+    <span class="smokeBlob b3 smokeVerticalTop" id="blob3"></span>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <img src="zma-logo.png" alt="ZMA Logo" style="block-size:55px; inline-size:auto;">
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav class="active">About</a>
+        <a href="skills.html" data-nav>Skills</a>
+        <a href="projects.html" data-nav>Projects</a>
+        <a href="services.html" data-nav>Services</a>
+        <a href="experience.html" data-nav>Experience</a>
+        <a href="contact.html" data-nav>Contact</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:10px">
+        <a class="btn primary" href="contact.html">BOOK NOW</a>
+        <button class="menuBtn" id="menuBtn" aria-label="Open menu">Menu</button>
+      </div>
+    </div>
+    <div class="mobile" id="mobileMenu" style="display:none">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding: 80px 0;">
+      <div class="container">
+        <h1 class="sectionTitle">About Me</h1>
+        <p class="sectionDesc" style="margin-top:12px; max-width:700px; margin-left:auto; margin-right:auto;">
+          I'm Zamin Abbas — a WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies.
+        </p>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:50px; align-items:center;">
+          <div>
+            <h2 style="font-size:28px; margin-bottom:16px;">Who I Am</h2>
+            <p style="color:var(--muted); line-height:1.8; margin-bottom:16px;">
+              I specialize in Local SEO, WordPress development, and digital marketing strategies that deliver real, measurable results for businesses.
+            </p>
+            <p style="color:var(--muted); line-height:1.8; margin-bottom:24px;">
+              With years of hands-on experience, I've helped dozens of local businesses rank higher on Google Maps, increase website traffic, and convert visitors into paying customers.
+            </p>
+            <div style="display:flex; gap:30px; margin-top:20px;">
+              <div style="text-align:center;">
+                <span style="font-size:2rem; font-weight:900; color:var(--brand); display:block;">50+</span>
+                <span style="color:var(--muted); font-size:14px;">Clients Served</span>
+              </div>
+              <div style="text-align:center;">
+                <span style="font-size:2rem; font-weight:900; color:var(--brand); display:block;">3+</span>
+                <span style="color:var(--muted); font-size:14px;">Years Experience</span>
+              </div>
+              <div style="text-align:center;">
+                <span style="font-size:2rem; font-weight:900; color:var(--brand); display:block;">100%</span>
+                <span style="color:var(--muted); font-size:14px;">Satisfaction</span>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--panel); border-radius:20px; padding:30px; border:1px solid var(--border2);">
+            <h3 style="margin-bottom:16px;">Core Skills</h3>
+            <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:12px;">
+              <li style="display:flex; align-items:center; gap:10px; color:var(--muted);">✅ Local SEO & Google Maps Optimization</li>
+              <li style="display:flex; align-items:center; gap:10px; color:var(--muted);">✅ WordPress Development</li>
+              <li style="display:flex; align-items:center; gap:10px; color:var(--muted);">✅ On-Page & Off-Page SEO</li>
+              <li style="display:flex; align-items:center; gap:10px; color:var(--muted);">✅ Google Business Profile (GMB)</li>
+              <li style="display:flex; align-items:center; gap:10px; color:var(--muted);">✅ Content Marketing</li>
+              <li style="display:flex; align-items:center; gap:10px; color:var(--muted);">✅ Social Media Marketing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <span>© 2024 Zamin Abbas - WordPress Developer</span>
+      <span>Local SEO • WordPress • Digital Marketing</span>
+    </div>
+  </footer>
+
+  <a class="wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="waIcon" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2a10 10 0 0 0-8.66 15.02L2 22l5.12-1.3A10 10 0 1 0 12 2Z" stroke="rgba(34,197,94,.9)" stroke-width="1.6"/>
+        <path d="M9.2 8.9c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.2 5 4.3 2.5.9 3 .7 3.6.7.6-.1 2-.8 2.3-1.5.3-.7.3-1.3.2-1.5-.1-.2-.3-.3-.6-.4l-1.8-.9c-.2-.1-.5-.1-.7.2l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.3-.8-.7-1.3-1.6-1.4-1.9-.1-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4-.1-.6l-.8-2Z" fill="rgba(34,197,94,.9)"/>
+      </svg>
+    </span>
+    <span><strong>WhatsApp</strong><small>Quick chat</small></span>
+  </a>
+</body>
+</html>

@@ -180,7 +180,17 @@
         <a href="about.html" data-nav>About</a>
         <a href="skills.html" data-nav>Skills</a>
         <a href="projects.html" data-nav>Projects</a>
-        <a href="services.html" data-nav>Services</a>
+        <div class="navDropdown">
+          <a href="services.html" class="dropBtn" data-nav>Services</a>
+          <div class="dropMenu">
+            <a href="local-seo.html">Local SEO</a>
+            <a href="web-design.html">WordPress Development</a>
+            <a href="seo.html">On-Page SEO</a>
+            <a href="digital-marketing.html">Social Media Marketing</a>
+            <a href="gmb-optimization.html">GMB Optimization</a>
+            <a href="services.html">All Services</a>
+          </div>
+        </div>
         <a href="experience.html" data-nav>Experience</a>
         <a href="contact.html" data-nav>Contact</a>
       </nav>
@@ -195,6 +205,11 @@
       <a href="skills.html">Skills</a>
       <a href="projects.html">Projects</a>
       <a href="services.html">Services</a>
+      <a href="local-seo.html">- Local SEO</a>
+      <a href="web-design.html">- WordPress Development</a>
+      <a href="seo.html">- On-Page SEO</a>
+      <a href="digital-marketing.html">- Social Media Marketing</a>
+      <a href="gmb-optimization.html">- GMB Optimization</a>
       <a href="experience.html">Experience</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -229,7 +244,7 @@
 
           <!-- LEFT: Text Content -->
           <div class="about-text-col reveal anim-left" data-anim>
-            <p style="color:var(--muted); line-height:1.8; margin-bottom:16px; font-size:16px;">I'm Zamin Abbas ó a results-driven WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies that deliver real, measurable results.</p>
+            <p style="color:var(--muted); line-height:1.8; margin-bottom:16px; font-size:16px;">I'm Zamin Abbas ù a results-driven WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies that deliver real, measurable results.</p>
             <p style="color:var(--muted); line-height:1.8; margin-bottom:24px; font-size:16px;">With years of hands-on experience, I've helped dozens of local businesses rank higher on Google Maps, increase website traffic, and convert visitors into paying customers.</p>
 
             <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:10px; margin-bottom:24px;">
@@ -275,7 +290,12 @@
         <p class="sectionDesc" style="margin-top:10px;">Professional digital marketing services to grow your business online.</p>
         <div class="service-grid" style="margin-top:40px;">
           <div class="service-card panel pad reveal anim-left" data-anim>
-            <div class="service-icon">???</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="10" r="2.5" fill="currentColor"/>
+              </svg>
+            </div>
             <h3>Local SEO</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Dominate local search results and Google Maps. Get found by customers in your area.</p>
             <ul class="service-features">
@@ -287,7 +307,12 @@
             <a class="btn primary" href="services.html" style="margin-top:auto; display:inline-flex;">Learn More</a>
           </div>
           <div class="service-card panel pad reveal anim-bottom" data-anim>
-            <div class="service-icon">??</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 9h8M8 12h8M8 15h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>WordPress Development</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Custom WordPress websites that are fast, secure, and optimized for search engines.</p>
             <ul class="service-features">
@@ -299,7 +324,12 @@
             <a class="btn primary" href="services.html" style="margin-top:auto; display:inline-flex;">Learn More</a>
           </div>
           <div class="service-card panel pad reveal anim-right" data-anim>
-            <div class="service-icon">??</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 19h16M7 16l3-3 2 2 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 10h2v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <h3>On-Page SEO</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Optimize your website to rank higher in organic search and attract more qualified traffic.</p>
             <ul class="service-features">
@@ -310,8 +340,33 @@
             </ul>
             <a class="btn primary" href="services.html" style="margin-top:auto; display:inline-flex;">Learn More</a>
           </div>
+
           <div class="service-card panel pad reveal anim-left" data-anim>
-            <div class="service-icon">??</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v3M12 18v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M3 12h3M18 12h3M4.9 19.1 7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M10.3 12.2l1.2 1.2 2.4-2.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Technical SEO</h3>
+            <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Fix hidden website issues that block rankings. I improve crawlability, speed, indexing, and site health so Google can rank your pages faster and higher.</p>
+            <ul class="service-features">
+              <li>Full technical audit with action plan</li>
+              <li>Core Web Vitals and page speed fixes</li>
+              <li>Indexing, crawl, and sitemap optimization</li>
+              <li>Schema and site structure improvements</li>
+            </ul>
+            <a class="btn primary" href="seo.html" style="margin-top:auto; display:inline-flex;">Fix My Technical SEO</a>
+          </div>
+          <div class="service-card panel pad reveal anim-left" data-anim>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="7" y="3.5" width="10" height="17" rx="2.4" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="17.5" r="1.1" fill="currentColor"/>
+                <path d="M10 6.8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Social Media Marketing</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Build your brand presence and engage your audience across all major social platforms.</p>
             <ul class="service-features">
@@ -321,6 +376,24 @@
               <li>Performance Analytics</li>
             </ul>
             <a class="btn primary" href="services.html" style="margin-top:auto; display:inline-flex;">Learn More</a>
+          </div>
+
+          <div class="service-card panel pad reveal anim-bottom" data-anim>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="10" r="2.4" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Google Business Profile (GMB) Creation & Optimization</h3>
+            <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Get found by nearby customers when they search on Google Maps. I build and optimize your profile to increase calls, direction requests, and high-intent local leads.</p>
+            <ul class="service-features">
+              <li>Higher Google Maps visibility in your service area</li>
+              <li>More calls, website clicks, and direction requests</li>
+              <li>Profile setup, category optimization, and service targeting</li>
+              <li>Photo, posts, Q&A, and review strategy for trust</li>
+            </ul>
+            <a class="btn primary" href="gmb-optimization.html" style="margin-top:auto; display:inline-flex;">Boost My Maps Ranking</a>
           </div>
         </div>
       </div>
@@ -335,22 +408,22 @@
           <div class="panel pad reveal anim-left" data-anim>
             <span class="stars">?????</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"Zamin made complex SEO discussions easy to follow. Our ranking improvements reflect the thoughtfulness of his strategy."</p>
-            <p style="margin-top:14px; font-weight:600;">ó David, Owner of a Plumbing Company</p>
+            <p style="margin-top:14px; font-weight:600;">ù David, Owner of a Plumbing Company</p>
           </div>
           <div class="panel pad reveal anim-bottom" data-anim>
             <span class="stars">?????</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"Six months later, more customers find us through organic search without any guesswork. Highly recommend Zamin!"</p>
-            <p style="margin-top:14px; font-weight:600;">ó Maria, CEO of a Medical Clinic</p>
+            <p style="margin-top:14px; font-weight:600;">ù Maria, CEO of a Medical Clinic</p>
           </div>
           <div class="panel pad reveal anim-right" data-anim>
             <span class="stars">?????</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"His emphasis on ethical practices and consistent reporting gave us confidence to keep investing together."</p>
-            <p style="margin-top:14px; font-weight:600;">ó Kevin, Partner at a Law Firm</p>
+            <p style="margin-top:14px; font-weight:600;">ù Kevin, Partner at a Law Firm</p>
           </div>
           <div class="panel pad reveal anim-left" data-anim>
             <span class="stars">?????</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"Our Google Maps visibility improved dramatically. We now get consistent calls and walk-ins every single day."</p>
-            <p style="margin-top:14px; font-weight:600;">ó Ahmed, Mobile Repair Shop Owner</p>
+            <p style="margin-top:14px; font-weight:600;">ù Ahmed, Mobile Repair Shop Owner</p>
           </div>
         </div>
       </div>
@@ -374,8 +447,8 @@
 
   <footer>
     <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-      <span>© 2024 Zamin Abbas - WordPress Developer</span>
-      <span>Local SEO ï WordPress ï Digital Marketing</span>
+      <span>ù 2024 Zamin Abbas - WordPress Developer</span>
+      <span>Local SEO ù WordPress ù Digital Marketing</span>
     </div>
   </footer>
 

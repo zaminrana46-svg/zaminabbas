@@ -26,7 +26,17 @@
         <a href="about.html" data-nav>About</a>
         <a href="skills.html" data-nav>Skills</a>
         <a href="projects.html" data-nav>Projects</a>
-        <a href="services.html" data-nav class="active">Services</a>
+        <div class="navDropdown">
+          <a href="services.html" class="dropBtn active" data-nav>Services</a>
+          <div class="dropMenu">
+            <a href="local-seo.html">Local SEO</a>
+            <a href="web-design.html">WordPress Development</a>
+            <a href="seo.html">On-Page SEO</a>
+            <a href="digital-marketing.html">Social Media Marketing</a>
+            <a href="gmb-optimization.html">GMB Optimization</a>
+            <a href="services.html">All Services</a>
+          </div>
+        </div>
         <a href="experience.html" data-nav>Experience</a>
         <a href="contact.html" data-nav>Contact</a>
       </nav>
@@ -41,6 +51,11 @@
       <a href="skills.html">Skills</a>
       <a href="projects.html">Projects</a>
       <a href="services.html">Services</a>
+      <a href="local-seo.html">- Local SEO</a>
+      <a href="web-design.html">- WordPress Development</a>
+      <a href="seo.html">- On-Page SEO</a>
+      <a href="digital-marketing.html">- Social Media Marketing</a>
+      <a href="gmb-optimization.html">- GMB Optimization</a>
       <a href="experience.html">Experience</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -55,7 +70,12 @@
         <div class="service-grid" style="margin-top:40px;">
 
           <div class="service-card panel pad reveal anim-left" data-anim>
-            <div class="service-icon">🗺️</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="10" r="2.5" fill="currentColor"/>
+              </svg>
+            </div>
             <h3>Local SEO</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Dominate local search results and Google Maps. Get found by customers in your area when they search for your services.</p>
             <ul class="service-features">
@@ -69,7 +89,12 @@
           </div>
 
           <div class="service-card panel pad reveal anim-bottom" data-anim>
-            <div class="service-icon">🌐</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 9h8M8 12h8M8 15h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>WordPress Development</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Custom WordPress websites that are fast, secure, and optimized for search engines from day one.</p>
             <ul class="service-features">
@@ -83,7 +108,12 @@
           </div>
 
           <div class="service-card panel pad reveal anim-right" data-anim>
-            <div class="service-icon">📈</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 19h16M7 16l3-3 2 2 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 10h2v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <h3>On-Page SEO</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Optimize your website content and structure to rank higher in organic search results and attract more qualified traffic.</p>
             <ul class="service-features">
@@ -97,7 +127,33 @@
           </div>
 
           <div class="service-card panel pad reveal anim-left" data-anim>
-            <div class="service-icon">📱</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v3M12 18v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M3 12h3M18 12h3M4.9 19.1 7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M10.3 12.2l1.2 1.2 2.4-2.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Technical SEO</h3>
+            <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Eliminate technical issues that stop your website from ranking. I improve site health, indexing, speed, and crawlability so your pages can perform better in search.</p>
+            <ul class="service-features">
+              <li>Complete technical SEO audit + priority roadmap</li>
+              <li>Core Web Vitals and speed optimization fixes</li>
+              <li>Indexing, crawl budget, robots, and sitemap setup</li>
+              <li>Schema, internal linking, and URL structure improvements</li>
+              <li>Broken links, redirects, and canonical cleanup</li>
+            </ul>
+            <a class="btn primary" href="contact.html" style="margin-top:auto; display:inline-flex;">Get Technical SEO Help</a>
+          </div>
+
+          <div class="service-card panel pad reveal anim-left" data-anim>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="7" y="3.5" width="10" height="17" rx="2.4" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="17.5" r="1.1" fill="currentColor"/>
+                <path d="M10 6.8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Social Media Marketing</h3>
             <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Build your brand presence and engage your audience across all major social media platforms.</p>
             <ul class="service-features">
@@ -108,6 +164,26 @@
               <li>Performance Analytics</li>
             </ul>
             <a class="btn primary" href="contact.html" style="margin-top:auto; display:inline-flex;">Get Started</a>
+          </div>
+
+          <div class="service-card panel pad reveal anim-bottom" data-anim>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="10" r="2.4" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Google Business Profile (GMB) Creation & Optimization</h3>
+            <p style="color:var(--muted); line-height:1.7; margin:10px 0;">Turn your Google Business Profile into a lead machine. I create and optimize your listing to help your business appear in local map searches and convert views into real customers.</p>
+            <ul class="service-features">
+              <li>Complete GBP setup and verification guidance</li>
+              <li>Category, service, and location optimization</li>
+              <li>Business description + keyword-rich profile content</li>
+              <li>Photo, post, and Q&A optimization for engagement</li>
+              <li>Review generation and response strategy</li>
+              <li>Monthly profile health and performance improvements</li>
+            </ul>
+            <a class="btn primary" href="contact.html" style="margin-top:auto; display:inline-flex;">Get More Calls from Google Maps</a>
           </div>
 
         </div>

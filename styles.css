@@ -130,7 +130,7 @@ themeToggle {
 }
 
 .menuBtn{
-  display:none;
+  display: none;
   border:1px solid var(--border2);
   background: transparent;
   color: var(--text);
@@ -140,7 +140,6 @@ themeToggle {
   font-size: 20px;
   width: 48px;
   height: 48px;
-  display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.2s ease;
@@ -844,9 +843,9 @@ footer{
   .cards2{ grid-template-columns: 1fr; }
   #feedback .cards2 { grid-template-columns: repeat(2, minmax(0,1fr)) }
   .formGrid{ grid-template-columns: 1fr; }
-  .links{ display:none }
-  .menuBtn{ display:flex !important; }
-  .mobile{ display:block }
+  .links{ display: none; }
+  .menuBtn{ display: flex !important; }
+  .mobile{ display: none; }
   .swapCard{ min-height: 350px; }
   .swapFrame{ height: 320px; }
   .container { padding: 0 16px; }

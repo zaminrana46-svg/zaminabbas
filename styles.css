@@ -2415,22 +2415,31 @@ body {
 /* ===== ABOUT SECTION 2-COLUMN LAYOUT ===== */
 .about-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 60px;
   margin-top: 48px;
-  align-items: center;
+  align-items: start;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
 }
 
 .about-text-col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  min-width: 0;
+  height: auto;
+  overflow: visible;
 }
 
 .about-image-col {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
+  overflow: visible;
 }
 
 .about-img {
@@ -2449,10 +2458,38 @@ body {
   box-shadow: 0 30px 80px rgba(255,140,66,0.18), 0 10px 30px rgba(0,0,0,0.12);
 }
 
+/* Make About section text always fully visible and wrapped on small screens */
+#about {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+#about .container {
+  max-width: 1120px !important;
+  padding: 0 18px !important;
+}
+
+#about .about-text-col p,
+#about .about-text-col li {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 @media (max-width: 768px) {
+  #about {
+    padding: 64px 0 !important;
+  }
+  #about .container {
+    display: block;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+  }
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
+    margin-top: 28px;
+    align-items: start;
   }
   .about-image-col { order: 2; }
   .about-text-col  { order: 1; }

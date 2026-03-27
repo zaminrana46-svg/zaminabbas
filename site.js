@@ -360,6 +360,121 @@ function setupThemeToggle() {
   });
 }
 
+/* ===== SEO HELPERS: CANONICAL + SCHEMA ===== */
+function setupSeoMetaAndSchema() {
+  const origin = "https://www.zaminabbas.com";
+  const path = window.location.pathname.endsWith("/")
+    ? "index.html"
+    : (window.location.pathname.split("/").pop() || "index.html");
+  const pageUrl = `${origin}/${path === "index.html" ? "" : path}`;
+
+  // Canonical
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    document.head.appendChild(canonical);
+  }
+  canonical.setAttribute("href", pageUrl);
+
+  const pageMap = {
+    "index.html": {
+      name: "Zamin Abbas - WordPress Developer & Local SEO Expert",
+      description: "WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies.",
+      type: "WebPage"
+    },
+    "about.html": {
+      name: "About Zamin Abbas - WordPress Developer & Local SEO Expert",
+      description: "Learn about Zamin Abbas, a results-driven WordPress Developer and Local SEO Expert helping local businesses grow online.",
+      type: "AboutPage"
+    },
+    "services.html": {
+      name: "Digital Marketing Services - Zamin Abbas",
+      description: "Explore Local SEO, WordPress Development, On-Page SEO, Technical SEO, GMB Optimization, and Social Media Marketing services.",
+      type: "CollectionPage"
+    },
+    "skills.html": {
+      name: "Skills - Zamin Abbas",
+      description: "Technical and marketing skills in Local SEO, WordPress development, Google Business Profile optimization, and digital strategy.",
+      type: "WebPage"
+    },
+    "projects.html": {
+      name: "Projects & Case Studies - Zamin Abbas",
+      description: "See case studies and project results from local SEO, Google Maps optimization, and conversion-focused website work.",
+      type: "CollectionPage"
+    },
+    "experience.html": {
+      name: "Experience - Zamin Abbas",
+      description: "Professional experience delivering Local SEO, WordPress development, and digital marketing services for business growth.",
+      type: "WebPage"
+    },
+    "contact.html": {
+      name: "Contact Zamin Abbas - Book a Strategy Call",
+      description: "Contact Zamin Abbas for Local SEO, WordPress development, and digital marketing services to grow your business.",
+      type: "ContactPage"
+    },
+    "local-seo.html": {
+      name: "Local SEO Services - Zamin Abbas",
+      description: "Local SEO services to improve map rankings, local visibility, calls, and customer leads from Google.",
+      type: "Service"
+    },
+    "seo.html": {
+      name: "SEO Services - Zamin Abbas",
+      description: "On-Page and Technical SEO services to improve crawlability, rankings, and organic traffic growth.",
+      type: "Service"
+    },
+    "gmb-optimization.html": {
+      name: "GMB Optimization Services - Zamin Abbas",
+      description: "Google Business Profile creation and optimization services to rank higher on Google Maps and generate more calls.",
+      type: "Service"
+    },
+    "digital-marketing.html": {
+      name: "Digital Marketing Services - Zamin Abbas",
+      description: "Digital marketing services including social media strategy, paid campaigns, and growth-focused execution.",
+      type: "Service"
+    },
+    "web-design.html": {
+      name: "WordPress Web Design Services - Zamin Abbas",
+      description: "Conversion-focused WordPress web design services built for performance, speed, and SEO.",
+      type: "Service"
+    },
+    "content-writing.html": {
+      name: "Content Writing Services - Zamin Abbas",
+      description: "SEO content writing services to help your business rank, engage users, and convert more leads.",
+      type: "Service"
+    }
+  };
+
+  const current = pageMap[path] || {
+    name: document.title,
+    description: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
+    type: "WebPage"
+  };
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": current.type,
+    name: current.name,
+    description: current.description,
+    url: pageUrl,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Zamin Abbas Portfolio",
+      url: origin
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Zamin Abbas",
+      url: origin
+    }
+  };
+
+  const schemaEl = document.createElement("script");
+  schemaEl.type = "application/ld+json";
+  schemaEl.textContent = JSON.stringify(schema);
+  document.head.appendChild(schemaEl);
+}
+
 /* ===== DROPDOWN MENU FIX ===== */
 function setupDropdownMenu() {
   const navDropdowns = document.querySelectorAll('.navDropdown');
@@ -553,6 +668,7 @@ function setupServicesModal() {
 
 /* ===== INIT ALL MODULES ===== */
 document.addEventListener("DOMContentLoaded", () => {
+  setupSeoMetaAndSchema();
   setupThemeToggle();
   setupSocialLinks();
   setupContactLinks();

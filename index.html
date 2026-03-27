@@ -7,7 +7,7 @@
   <meta name="description" content="WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies." />
   <meta name="theme-color" content="#06142d" />
 
-  <!-- Schema Markup: Person -->
+  <!-- Schema Markup: Person (CRITICAL - keep in head for rich results) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,123 +41,24 @@
   }
   </script>
 
-  <!-- Schema Markup: LocalBusiness + ProfessionalService -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
-    "name": "Zamin Abbas - Digital Marketing Services",
-    "url": "https://www.zaminabbas.com",
-    "logo": "https://www.zaminabbas.com/zma-logo.png",
-    "image": "https://www.zaminabbas.com/10.png",
-    "description": "Professional Local SEO, WordPress Development, and Digital Marketing services for local businesses in Multan, Pakistan and worldwide.",
-    "telephone": "+923042828068",
-    "email": "digitalmarketingskills46@gmail.com",
-    "priceRange": "$$",
-    "currenciesAccepted": "PKR, USD",
-    "paymentAccepted": "Cash, Bank Transfer, JazzCash, EasyPaisa",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Multan",
-      "addressRegion": "Punjab",
-      "postalCode": "60000",
-      "addressCountry": "PK"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "30.1575",
-      "longitude": "71.5249"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "21:00"
-      }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Digital Marketing Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Local SEO",
-            "description": "Google Business Profile optimization, local citation building, and map pack rankings to dominate local search results."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "WordPress Development",
-            "description": "Custom WordPress websites that are fast, secure, and optimized for search engines."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "On-Page SEO",
-            "description": "Keyword research, meta tag optimization, content optimization, and technical SEO audits."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Social Media Marketing",
-            "description": "Content strategy, Instagram and Facebook management, paid social campaigns, and performance analytics."
-          }
-        }
-      ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "50",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "David" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Zamin made complex SEO discussions easy to follow. Our ranking improvements reflect the thoughtfulness of his strategy."
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Maria" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Six months later, more customers find us through organic search without any guesswork. Highly recommend Zamin!"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Schema Markup: WebSite with SearchAction -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Zamin Abbas Portfolio",
-    "url": "https://www.zaminabbas.com",
-    "description": "WordPress Developer and Local SEO Expert portfolio website.",
-    "author": {
-      "@type": "Person",
-      "name": "Zamin Abbas"
-    }
-  }
-  </script>
-  <!-- Preload hero image for fast LCP -->
+  <!-- CRITICAL CSS (Instant First Paint - FOUC Fix) -->
+  <link rel="preload" href="critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="critical.css"></noscript>
+  
+  <!-- Logo preload (nav visible immediately) -->
+  <link rel="preload" as="image" href="zma-logo.png" fetchpriority="high">
+  <!-- Hero preload -->
   <link rel="preload" as="image" href="10.png" fetchpriority="high">
-  <!-- Preload critical CSS -->
-  <link rel="preload" as="style" href="styles.css" onload="this.rel='stylesheet'">
+  
+  <!-- Main CSS (preload for fast fallback) -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  
+  <!-- JS (deferred - safe) -->
   <script src="site.js" defer></script>
+  
+  <!-- FOUC Killer: Disable heavy effects on hard refresh -->
+  <script>if(performance.navigation?.type===1){document.querySelector('.smokeWrap')?.remove();document.querySelectorAll('.cursor,.cursorDot').forEach(el=>el.remove())}</script>
 </head>
 <body>
   <div class="cursor" id="cursor"></div>
@@ -172,11 +73,11 @@
 
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Go to Home">
+      <a class="brand" href="#home" onclick="if(event.target.tagName==='A')event.preventDefault();smoothScroll('home')" aria-label="Go to Home">
         <img src="zma-logo.png" alt="ZMA Logo" style="block-size:55px; inline-size:auto;">
       </a>
       <nav class="links" aria-label="Primary navigation">
-        <a href="index.html" data-nav>Home</a>
+        <a href="#home" data-nav onclick="if(event.target.tagName==='A')event.preventDefault();smoothScroll('home')">Home</a>
         <a href="about.html" data-nav>About</a>
         <a href="skills.html" data-nav>Skills</a>
         <a href="projects.html" data-nav>Projects</a>
@@ -200,7 +101,7 @@
       </div>
     </div>
     <div class="mobile" id="mobileMenu" style="display:none">
-      <a href="index.html">Home</a>
+      <a href="#home" onclick="if(event.target.tagName==='A')event.preventDefault();smoothScroll('home')">Home</a>
       <a href="about.html">About</a>
       <a href="skills.html">Skills</a>
       <a href="projects.html">Projects</a>
@@ -244,16 +145,16 @@
 
           <!-- LEFT: Text Content -->
           <div class="about-text-col reveal anim-left" data-anim>
-            <p style="color:var(--muted); line-height:1.8; margin-bottom:16px; font-size:16px;">I'm Zamin Abbas � a results-driven WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies that deliver real, measurable results.</p>
+            <p style="color:var(--muted); line-height:1.8; margin-bottom:16px; font-size:16px;">I'm Zamin Abbas — a results-driven WordPress Developer and Local SEO Expert helping local businesses grow online with proven strategies that deliver real, measurable results.</p>
             <p style="color:var(--muted); line-height:1.8; margin-bottom:24px; font-size:16px;">With years of hands-on experience, I've helped dozens of local businesses rank higher on Google Maps, increase website traffic, and convert visitors into paying customers.</p>
 
             <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:10px; margin-bottom:24px;">
-              <li style="color:var(--muted);">? Local SEO & Google Maps Optimization</li>
-              <li style="color:var(--muted);">? WordPress Development</li>
-              <li style="color:var(--muted);">? On-Page & Off-Page SEO</li>
-              <li style="color:var(--muted);">? Google Business Profile (GMB)</li>
-              <li style="color:var(--muted);">? Content Marketing</li>
-              <li style="color:var(--muted);">? Social Media Marketing</li>
+              <li style="color:var(--muted);">✅ Local SEO & Google Maps Optimization</li>
+              <li style="color:var(--muted);">✅ WordPress Development</li>
+              <li style="color:var(--muted);">✅ On-Page & Off-Page SEO</li>
+              <li style="color:var(--muted);">✅ Google Business Profile (GMB)</li>
+              <li style="color:var(--muted);">✅ Content Marketing</li>
+              <li style="color:var(--muted);">✅ Social Media Marketing</li>
             </ul>
 
             <div style="display:flex; gap:30px; margin-bottom:28px; flex-wrap:wrap;">
@@ -406,24 +307,24 @@
         <p class="sectionDesc" style="margin-top:10px;">What my clients say about working with me.</p>
         <div class="grid cards2" style="margin-top:40px;">
           <div class="panel pad reveal anim-left" data-anim>
-            <span class="stars">?????</span>
+            <span class="stars">★★★★★</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"Zamin made complex SEO discussions easy to follow. Our ranking improvements reflect the thoughtfulness of his strategy."</p>
-            <p style="margin-top:14px; font-weight:600;">� David, Owner of a Plumbing Company</p>
+            <p style="margin-top:14px; font-weight:600;">— David, Owner of a Plumbing Company</p>
           </div>
           <div class="panel pad reveal anim-bottom" data-anim>
-            <span class="stars">?????</span>
+            <span class="stars">★★★★★</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"Six months later, more customers find us through organic search without any guesswork. Highly recommend Zamin!"</p>
-            <p style="margin-top:14px; font-weight:600;">� Maria, CEO of a Medical Clinic</p>
+            <p style="margin-top:14px; font-weight:600;">— Maria, CEO of a Medical Clinic</p>
           </div>
           <div class="panel pad reveal anim-right" data-anim>
-            <span class="stars">?????</span>
+            <span class="stars">★★★★★</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"His emphasis on ethical practices and consistent reporting gave us confidence to keep investing together."</p>
-            <p style="margin-top:14px; font-weight:600;">� Kevin, Partner at a Law Firm</p>
+            <p style="margin-top:14px; font-weight:600;">— Kevin, Partner at a Law Firm</p>
           </div>
           <div class="panel pad reveal anim-left" data-anim>
-            <span class="stars">?????</span>
+            <span class="stars">★★★★★</span>
             <p style="color:var(--muted); line-height:1.8; font-style:italic;">"Our Google Maps visibility improved dramatically. We now get consistent calls and walk-ins every single day."</p>
-            <p style="margin-top:14px; font-weight:600;">� Ahmed, Mobile Repair Shop Owner</p>
+            <p style="margin-top:14px; font-weight:600;">— Ahmed, Mobile Repair Shop Owner</p>
           </div>
         </div>
       </div>
@@ -447,9 +348,121 @@
 
   <footer>
     <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-      <span>� 2024 Zamin Abbas - WordPress Developer</span>
-      <span>Local SEO � WordPress � Digital Marketing</span>
+      <span>© 2024 Zamin Abbas - WordPress Developer</span>
+      <span>Local SEO • WordPress • Digital Marketing</span>
     </div>
+    
+    <!-- MOVED: Non-critical heavy schemas to body-end (performance) -->
+    <!-- Schema Markup: LocalBusiness + ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "name": "Zamin Abbas - Digital Marketing Services",
+      "url": "https://www.zaminabbas.com",
+      "logo": "https://www.zaminabbas.com/zma-logo.png",
+      "image": "https://www.zaminabbas.com/10.png",
+      "description": "Professional Local SEO, WordPress Development, and Digital Marketing services for local businesses in Multan, Pakistan and worldwide.",
+      "telephone": "+923042828068",
+      "email": "digitalmarketingskills46@gmail.com",
+      "priceRange": "$$",
+      "currenciesAccepted": "PKR, USD",
+      "paymentAccepted": "Cash, Bank Transfer, JazzCash, EasyPaisa",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Multan",
+        "addressRegion": "Punjab",
+        "postalCode": "60000",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.1575",
+        "longitude": "71.5249"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Marketing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Local SEO",
+              "description": "Google Business Profile optimization, local citation building, and map pack rankings to dominate local search results."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "WordPress Development",
+              "description": "Custom WordPress websites that are fast, secure, and optimized for search engines."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "On-Page SEO",
+              "description": "Keyword research, meta tag optimization, content optimization, and technical SEO audits."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Social Media Marketing",
+              "description": "Content strategy, Instagram and Facebook management, paid social campaigns, and performance analytics."
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "50",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "David" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Zamin made complex SEO discussions easy to follow. Our ranking improvements reflect the thoughtfulness of his strategy."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Maria" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Six months later, more customers find us through organic search without any guesswork. Highly recommend Zamin!"
+        }
+      ]
+    }
+    </script>
+    <!-- Schema Markup: WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Zamin Abbas Portfolio",
+      "url": "https://www.zaminabbas.com",
+      "description": "WordPress Developer and Local SEO Expert portfolio website.",
+      "author": {
+        "@type": "Person",
+        "name": "Zamin Abbas"
+      }
+    }
+    </script>
   </footer>
 
   <a class="wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">

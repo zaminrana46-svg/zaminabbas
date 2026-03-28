@@ -5,8 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Experience - Zamin Abbas</title>
   <meta name="description" content="See the professional experience of Zamin Abbas in Local SEO, WordPress development, and digital marketing strategy for business growth." />
-  <link rel="stylesheet" href="styles.css">
+  <!-- CRITICAL CSS (Instant First Paint - FOUC Fix) -->
+  <link rel="preload" href="critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="critical.css"></noscript>
+  
+  <!-- Logo preload (nav visible immediately) -->
+  <link rel="preload" as="image" href="zma-logo.png" fetchpriority="high">
+  
+  <!-- Main CSS (preload for fast fallback) -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  
+  <!-- JS (deferred - safe) -->
   <script src="site.js" defer></script>
+  
+  <!-- FOUC Killer: Disable heavy effects on hard refresh -->
+  <script>if(performance.navigation?.type===1){document.querySelector('.smokeWrap')?.remove();document.querySelectorAll('.cursor,.cursorDot').forEach(el=>el.remove())}</script>
 </head>
 <body>
   <div class="cursor" id="cursor"></div>

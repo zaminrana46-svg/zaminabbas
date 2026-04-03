@@ -1,0 +1,40 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#e05c00" stroke-width="2" opacity="0.1"/>
+  
+  <!-- Central node/hub -->
+  <circle cx="50" cy="50" r="6" fill="#e05c00"/>
+  
+  <!-- Connection lines from center -->
+  <line x1="50" y1="50" x2="30" y2="28" stroke="#e05c00" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="70" y2="28" stroke="#e05c00" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="25" y2="50" stroke="#e05c00" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="75" y2="50" stroke="#e05c00" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="30" y2="72" stroke="#e05c00" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="70" y2="72" stroke="#e05c00" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Top-left node -->
+  <circle cx="30" cy="28" r="4.5" fill="none" stroke="#e05c00" stroke-width="1.5"/>
+  <path d="M 27 25 L 33 31 M 27 31 L 33 25" stroke="#e05c00" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- Top-right node -->
+  <circle cx="70" cy="28" r="4.5" fill="none" stroke="#e05c00" stroke-width="1.5"/>
+  <circle cx="70" cy="28" r="2" fill="#e05c00"/>
+  
+  <!-- Left node -->
+  <circle cx="25" cy="50" r="4.5" fill="none" stroke="#e05c00" stroke-width="1.5"/>
+  <rect x="23" y="48" width="4" height="4" fill="#e05c00"/>
+  
+  <!-- Right node -->
+  <circle cx="75" cy="50" r="4.5" fill="none" stroke="#e05c00" stroke-width="1.5"/>
+  <path d="M 72 47 L 78 53 M 72 53 L 78 47" stroke="#e05c00" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- Bottom-left node -->
+  <circle cx="30" cy="72" r="4.5" fill="none" stroke="#e05c00" stroke-width="1.5"/>
+  <circle cx="30" cy="72" r="2.5" fill="#e05c00" opacity="0.6"/>
+  
+  <!-- Bottom-right node -->
+  <circle cx="70" cy="72" r="4.5" fill="none" stroke="#e05c00" stroke-width="1.5"/>
+  <line x1="68" y1="70" x2="72" y2="74" stroke="#e05c00" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="68" y1="74" x2="72" y2="70" stroke="#e05c00" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

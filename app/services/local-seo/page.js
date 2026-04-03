@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export default function LocalSEO() {
@@ -17,11 +17,11 @@ export default function LocalSEO() {
             I help businesses dominate local search results through powerful Local SEO strategies. From optimizing your Google Business Profile to building high-quality local citations, I ensure your business appears where your customers are searching.
           </p>
           <ul>
-            <li>✓ Google Business Profile Optimization</li>
-            <li>✓ Local Keyword Targeting</li>
-            <li>✓ Citation Building</li>
-            <li>✓ Map Ranking Strategies</li>
-            <li>✓ Competitor Analysis</li>
+            <li>âœ“ Google Business Profile Optimization</li>
+            <li>âœ“ Local Keyword Targeting</li>
+            <li>âœ“ Citation Building</li>
+            <li>âœ“ Map Ranking Strategies</li>
+            <li>âœ“ Competitor Analysis</li>
           </ul>
         </div>
       </section>
@@ -29,11 +29,13 @@ export default function LocalSEO() {
         <div className="container">
           <h2>Ready to start your project?</h2>
           <Link href="/contact" className="btn">
-            Get Started →
+            Get Started â†’
           </Link>
         </div>
       </section>
     </>
   );
 }
+
+
 

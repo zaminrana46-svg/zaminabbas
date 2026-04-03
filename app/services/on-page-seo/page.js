@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export default function OnPageSEO() {
@@ -17,11 +17,11 @@ export default function OnPageSEO() {
             On-page SEO ensures each page is fully optimized for target keywords and search engines. I optimize meta tags, headings, content structure, internal links, and user experience signals to improve your rankings and click-through rates.
           </p>
           <ul>
-            <li>✓ Keyword Research & Targeting</li>
-            <li>✓ Meta Tags Optimization</li>
-            <li>✓ Content Optimization</li>
-            <li>✓ Internal Linking Strategy</li>
-            <li>✓ User Experience Optimization</li>
+            <li>✔ Keyword Research & Targeting</li>
+            <li>✔ Meta Tags Optimization</li>
+            <li>✔ Content Optimization</li>
+            <li>✔ Internal Linking Strategy</li>
+            <li>✔ User Experience Optimization</li>
           </ul>
         </div>
       </section>
@@ -29,11 +29,13 @@ export default function OnPageSEO() {
         <div className="container">
           <h2>Ready to start your project?</h2>
           <Link href="/contact" className="btn">
-            Get Started →
+            Get Started â†’
           </Link>
         </div>
       </section>
     </>
   );
 }
+
+
 

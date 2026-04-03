@@ -1,6 +1,7 @@
 ﻿import Link from 'next/link';
 import './globals.css';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
+import LayoutClient from './LayoutClient';
 
 export const metadata = {
   title: 'Zamin Abbas | Top Ranked SEO Specialist Pakistan',
@@ -56,10 +57,22 @@ function Footer() {
         <div className="f-col">
           <h4>Contact</h4>
           <div className="f-ci">
-            <div>📍 Matro Station, Pracha Street, Multan, Pakistan</div>
-            <div>✉️ <a href="mailto:digitalmarketingskills46@gmail.com" className="f-ci-link">digitalmarketingskills46@gmail.com</a></div>
-            <div>📱 <a href="tel:+923042828068" className="f-ci-link">+92 304 282 8068</a></div>
-            <div>💬 <a href="https://wa.me/923042828068" target="_blank" rel="noreferrer" className="f-ci-link">WhatsApp</a></div>
+            <div className="contact-item">
+              <span className="icon">📍</span>
+              <span className="text">Matro Station, Pracha Street, Multan, Pakistan</span>
+            </div>
+            <div className="contact-item email">
+              <span className="icon">📧</span>
+              <a href="mailto:digitalmarketingskills46@gmail.com" className="text f-ci-link">digitalmarketingskills46@gmail.com</a>
+            </div>
+            <div className="contact-item phone">
+              <span className="icon">📱</span>
+              <a href="tel:+923042828068" className="text f-ci-link">+92 304 282 8068</a>
+            </div>
+            <div className="contact-item whatsapp">
+              <span className="icon">💬</span>
+              <a href="https://wa.me/923042828068" target="_blank" rel="noreferrer" className="text f-ci-link">WhatsApp</a>
+            </div>
           </div>
         </div>
       </div>
@@ -81,12 +94,16 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href="https://zaminabbas.com/" />
       </head>
       <body>
-        <Navbar />
-        {children}
-        <Footer />
-        <a href="https://wa.me/923042828068" target="_blank" rel="noreferrer" className="whatsapp-float" aria-label="WhatsApp Chat">💬</a>
+        <LayoutClient>
+          <Navbar />
+          {children}
+          <Footer />
+          <a href="https://wa.me/923042828068" target="_blank" rel="noreferrer" className="whatsapp-float" aria-label="WhatsApp Chat">💬</a>
+        </LayoutClient>
       </body>
     </html>
   );
 }
+
+
 

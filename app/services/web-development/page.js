@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export default function WebDevelopment() {
@@ -17,11 +17,11 @@ export default function WebDevelopment() {
             I design and develop responsive, high-performance websites that deliver exceptional user experiences. Every website is optimized for speed, SEO, and conversions to ensure your business achieves its goals online.
           </p>
           <ul>
-            <li>✓ Responsive Web Design</li>
-            <li>✓ WordPress Development</li>
-            <li>✓ Custom Web Applications</li>
-            <li>✓ E-commerce Solutions</li>
-            <li>✓ Performance Optimization</li>
+            <li>✔ Responsive Web Design</li>
+            <li>✔ WordPress Development</li>
+            <li>✔ Custom Web Applications</li>
+            <li>✔ E-commerce Solutions</li>
+            <li>✔ Performance Optimization</li>
           </ul>
         </div>
       </section>
@@ -29,11 +29,13 @@ export default function WebDevelopment() {
         <div className="container">
           <h2>Ready to start your project?</h2>
           <Link href="/contact" className="btn">
-            Get Started →
+            Get Started â†’
           </Link>
         </div>
       </section>
     </>
   );
 }
+
+
 

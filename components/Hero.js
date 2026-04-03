@@ -1,10 +1,12 @@
-'use client';
+﻿'use client';
+
+import Image from 'next/image';
 
 export default function Hero({ subtitle, title, titleSpan, bullets, image, imageSrc, showCTA = false }) {
   return (
     <section className="hero">
-      <div className="hero-left">
-        <div className="hero-eyebrow">{subtitle}</div>
+      <div className="hero-text">
+        {subtitle && <div className="hero-eyebrow">{subtitle}</div>}
         <h1>
           {title}
           {titleSpan && <span> {titleSpan}</span>}
@@ -13,7 +15,7 @@ export default function Hero({ subtitle, title, titleSpan, bullets, image, image
           <ul className="hero-bullets">
             {bullets.map((bullet, i) => (
               <li key={i}>
-                <span className="bullet-check">✓</span>
+                <span className="bullet-check">✔</span>
                 {bullet}
               </li>
             ))}
@@ -26,13 +28,15 @@ export default function Hero({ subtitle, title, titleSpan, bullets, image, image
         )}
       </div>
       {imageSrc && (
-        <div className="hero-right">
+        <div className="hero-image">
           <div className="hero-photo">
-            <img src={imageSrc} alt={image} className="hero-photo-inner" />
+            <Image src={imageSrc} alt={image} className="hero-photo-inner" width={720} height={650} />
           </div>
         </div>
       )}
     </section>
   );
 }
+
+
 

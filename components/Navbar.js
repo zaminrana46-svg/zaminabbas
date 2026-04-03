@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 
@@ -23,7 +23,7 @@ export default function Navbar() {
         <li><Link href="/about">About Us</Link></li>
         <li><Link href="/contact">Contact</Link></li>
       </ul>
-      <Link href="/contact" style={navStyles.navBtn}>Let's Talk</Link>
+      <Link href="/contact" style={navStyles.navBtn}>Let&apos;s Talk</Link>
     </nav>
   );
 }
@@ -90,4 +90,6 @@ const navStyles = {
     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
   },
 };
+
+
 

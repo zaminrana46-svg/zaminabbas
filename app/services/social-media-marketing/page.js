@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export default function SocialMediaMarketing() {
@@ -17,11 +17,11 @@ export default function SocialMediaMarketing() {
             I create strategic social media campaigns that build brand awareness, increase engagement, and drive conversions. From content creation to community management and performance tracking, I help you succeed on every platform.
           </p>
           <ul>
-            <li>✓ Social Media Strategy</li>
-            <li>✓ Content Creation & Scheduling</li>
-            <li>✓ Community Management</li>
-            <li>✓ Paid Social Campaigns</li>
-            <li>✓ Analytics & Reporting</li>
+            <li>✔ Social Media Strategy</li>
+            <li>✔ Content Creation & Scheduling</li>
+            <li>✔ Community Management</li>
+            <li>✔ Paid Social Campaigns</li>
+            <li>âœ“ Analytics & Reporting</li>
           </ul>
         </div>
       </section>
@@ -29,11 +29,13 @@ export default function SocialMediaMarketing() {
         <div className="container">
           <h2>Ready to start your project?</h2>
           <Link href="/contact" className="btn">
-            Get Started →
+            Get Started â†’
           </Link>
         </div>
       </section>
     </>
   );
 }
+
+
 

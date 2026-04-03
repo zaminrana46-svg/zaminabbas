@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export default function GMBOptimization() {
@@ -17,11 +17,11 @@ export default function GMBOptimization() {
             Google Business Profile optimization is essential for local visibility. I optimize your business listing, manage reviews, enhance posts, and implement strategies to boost your rankings on Google Maps and local search results.
           </p>
           <ul>
-            <li>✓ Profile Optimization</li>
-            <li>✓ Review Management</li>
-            <li>✓ Photo & Video Optimization</li>
-            <li>✓ Posts Strategy</li>
-            <li>✓ Q&A Management</li>
+            <li>✔ Profile Optimization</li>
+            <li>✔ Review Management</li>
+            <li>✔ Photo & Video Optimization</li>
+            <li>✔ Posts Strategy</li>
+            <li>✔&A Management</li>
           </ul>
         </div>
       </section>
@@ -36,4 +36,6 @@ export default function GMBOptimization() {
     </>
   );
 }
+
+
 

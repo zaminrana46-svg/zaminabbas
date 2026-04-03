@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export const metadata = {
@@ -60,7 +60,7 @@ export default function GoogleAds() {
             <li>Budget efficiency</li>
           </ul>
 
-          <p>Ready to drive more qualified traffic and boost sales? Let's create a Google Ads strategy that delivers real results.</p>
+          <p>Ready to drive more qualified traffic and boost sales? Let&apos;s create a Google Ads strategy that delivers real results.</p>
 
           <Link href="/contact" className="btn-orange">
             Start Google Ads Campaign →
@@ -70,4 +70,6 @@ export default function GoogleAds() {
     </>
   );
 }
+
+
 

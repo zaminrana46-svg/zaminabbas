@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export const metadata = {
@@ -20,10 +20,10 @@ export default function SEO() {
             Today
           </h1>
           <p>
-            Improve your website's visibility in search engines with our comprehensive SEO services. Drive more organic traffic and increase conversions with proven strategies.
+            Improve your website&apos;s visibility in search engines with our comprehensive SEO services. Drive more organic traffic and increase conversions with proven strategies.
           </p>
           <Link href="#contact" className="btn-orange">
-            Get SEO Audit →
+            Get SEO Audit â†’
           </Link>
         </div>
       </section>
@@ -60,14 +60,16 @@ export default function SEO() {
             <li>Data-driven approach</li>
           </ul>
 
-          <p>Ready to improve your search rankings? Let's work together to create an SEO strategy that drives real results for your business.</p>
+          <p>Ready to improve your search rankings? Let&apos;s work together to create an SEO strategy that drives real results for your business.</p>
 
           <Link href="/contact" className="btn-orange">
-            Start SEO Campaign →
+            Start SEO Campaign â†’
           </Link>
         </div>
       </section>
     </>
   );
 }
+
+
 

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 export default function BrandStrip() {
   return (
@@ -25,4 +25,6 @@ export default function BrandStrip() {
     </section>
   );
 }
+
+
 

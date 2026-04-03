@@ -1,5 +1,3 @@
-
-import Link from 'next/link';
 import Hero from '../components/Hero';
 import BrandStrip from '../components/BrandStrip';
 import About from '../components/About';
@@ -9,54 +7,44 @@ import ThankYouBand from '../components/ThankYouBand';
 import FAQ from '../components/FAQ';
 import ContactForm from '../components/ContactForm';
 
+export const metadata = {
+  title: 'Zamin Abbas | Top Ranked SEO Specialist Pakistan',
+  description: 'Top-ranked SEO specialist in Pakistan with 10+ years of experience offering local SEO, web development, and digital marketing.',
+};
+
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero
-        subtitle="Top Ranked Specialist"
-        title="Pakistan's"
-        titleSpan="Top Ranked SEO Specialist"
+        title="Grow Fast, Rank Higher"
+        titleSpan="Proven SEO & Web Development"
         bullets={[
-          '10+ Years of SEO Experience',
-          'Ranked in Top SEO Experts in Pakistan',
-          'Top Rated Freelancer on Fiverr & Upwork',
-          '500+ International Reviews',
+          '250+ high-impact websites optimized',
+          'Local SEO + conversion-focused design',
         ]}
+        image="Zamin Abbas"
         imageSrc="/images/10.png"
-        image="Hero Image"
-        showCTA={false}
+        showCTA={true}
       />
 
       <BrandStrip />
-
       <About />
-
       <Services />
-
       <Testimonials />
-
       <ThankYouBand />
-
       <FAQ />
 
-      <section className="contact" id="contact">
-        <div className="contact-wrap">
-          <div className="contact-left sr">
-            <span className="section-tag">Ready to Grow? Contact Me</span>
-            <h2 className="section-title">
-              Do You Want To<br />
-              <span>Boost Your Business?</span>
-            </h2>
-            <p>Have a project in mind or need expert guidance? Let's connect to discuss your goals and build something impactful together.</p>
-            <div className="contact-photo">
-              <img src="/images/10.png" alt="Photo" className="contact-img" />
+      <section id="contact" className="contact-section">
+        <div className="container">
+          <div className="contact-content">
+            <div className="contact-info">
+              <h2>Do You Want To Boost Your Business?</h2>
+              <p>Connect with me and get a customized SEO and web strategy.</p>
             </div>
+            <ContactForm />
           </div>
-          <ContactForm />
         </div>
       </section>
-    </>
+    </main>
   );
 }
-
-

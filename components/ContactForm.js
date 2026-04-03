@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 
@@ -14,7 +14,7 @@ export default function ContactForm() {
   return (
     <form className="form-box sr d1" onSubmit={handleSubmit}>
       <h3>Do You Want To Boost Your Business?</h3>
-      <p className="form-sub">Fill in the form and I'll get back to you within 24 hours.</p>
+      <p className="form-sub">Fill in the form and I&apos;ll get back to you within 24 hours.</p>
       <div className="form-row">
         <div className="fg">
           <label>Name *</label>
@@ -51,9 +51,11 @@ export default function ContactForm() {
         <textarea name="message" placeholder="Tell me about your project and goals..." required></textarea>
       </div>
       <button className="form-btn" type="submit">
-        {submitted ? '✓ Message Sent!' : 'Send Request →'}
+        {submitted ? '✔ Message Sent!' : 'Send Request →'}
       </button>
     </form>
   );
 }
+
+
 

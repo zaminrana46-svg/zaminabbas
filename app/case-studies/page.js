@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export const metadata = {
@@ -27,8 +27,10 @@ export default function CaseStudies() {
         <p>UX and speed optimization increased conversions by 38% for paid & organic traffic.</p>
       </div>
 
-      <Link href="/portfolio">← Back to Portfolio</Link>
+      <Link href="/portfolio">â† Back to Portfolio</Link>
     </div>
   );
 }
+
+
 

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 
@@ -38,7 +38,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <div style={footerStyles.fCi}>
             <div>📍 Matro Station, Pracha Street, Multan, Pakistan</div>
-            <div>✉️ <a href="mailto:digitalmarketingskills46@gmail.com" style={footerStyles.fCiLink}>digitalmarketingskills46@gmail.com</a></div>
+            <div>📧 <a href="mailto:digitalmarketingskills46@gmail.com" style={footerStyles.fCiLink}>digitalmarketingskills46@gmail.com</a></div>
             <div>📱 <a href="tel:+923042828068" style={footerStyles.fCiLink}>+92 304 282 8068</a></div>
             <div>💬 <a href="https://wa.me/923042828068" target="_blank" style={footerStyles.fCiLink}>WhatsApp</a></div>
           </div>
@@ -62,8 +62,9 @@ const footerStyles = {
     maxWidth: '1400px',
     margin: '0 auto',
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
-    gap: '50px',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+    gap: '30px',
+    rowGap: '40px',
     marginBottom: '40px',
   },
   fCol: {
@@ -128,4 +129,6 @@ const footerStyles = {
     flexWrap: 'wrap',
   },
 };
+
+
 

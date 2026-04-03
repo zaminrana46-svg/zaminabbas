@@ -1,6 +1,7 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
       <div className="container">
         <div className="about-row">
           <div className="about-img-col">
-            <img src="/images/13.png" alt="Zamin Abbas" className="about-profile-img" />
+            <Image src="/images/13.png" alt="Zamin Abbas" className="about-profile-img" width={450} height={450} />
           </div>
 
           <div className="about-content">
@@ -16,7 +17,7 @@ export default function About() {
             <h2>Driving Growth With Smart SEO & Web Solutions</h2>
 
             <p className="about-desc">
-              I'm Zamin Abbas, an SEO specialist and web developer helping businesses grow online through data-driven strategies and high-performance websites.
+              I&apos;m Zamin Abbas, an SEO specialist and web developer helping businesses grow online through data-driven strategies and high-performance websites.
             </p>
 
             <ul className="about-points">
@@ -54,4 +55,6 @@ export default function About() {
     </section>
   );
 }
+
+
 

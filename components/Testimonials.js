@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 export default function Testimonials() {
   const testimonials = [
@@ -72,4 +72,6 @@ export default function Testimonials() {
     </section>
   );
 }
+
+
 

@@ -1,4 +1,3 @@
-
 import ContactForm from '../../components/ContactForm';
 
 export const metadata = {
@@ -12,7 +11,7 @@ export default function Contact() {
       <section className="contact-section">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>Let's grow your business with SEO, Web Development, and Digital Marketing.</p>
+          <p>Let&apos;s grow your business with SEO, Web Development, and Digital Marketing.</p>
         </div>
       </section>
 
@@ -23,20 +22,20 @@ export default function Contact() {
             <h2 className="section-title">
               Get In Touch
             </h2>
-            <p>I'm here to help you grow your business online. Reach out for a free strategy discussion.</p>
+            <p>I&apos;m here to help you grow your business online. Reach out for a free strategy discussion.</p>
 
             <div style={{ marginTop: '30px' }}>
-              <h4 style={{ marginBottom: '10px' }}>📞 Phone</h4>
+              <h4 style={{ marginBottom: '10px' }}>Phone</h4>
               <p><a href="tel:+923042828068">+92 304 282 8068</a></p>
             </div>
 
             <div style={{ marginTop: '20px' }}>
-              <h4 style={{ marginBottom: '10px' }}>📧 Email</h4>
+              <h4 style={{ marginBottom: '10px' }}>Email</h4>
               <p><a href="mailto:digitalmarketingskills46@gmail.com">digitalmarketingskills46@gmail.com</a></p>
             </div>
 
             <div style={{ marginTop: '20px' }}>
-              <h4 style={{ marginBottom: '10px' }}>💬 WhatsApp</h4>
+              <h4 style={{ marginBottom: '10px' }}>WhatsApp</h4>
               <p><a href="https://wa.me/923042828068" target="_blank">Chat now on WhatsApp</a></p>
             </div>
           </div>
@@ -57,4 +56,3 @@ export default function Contact() {
     </main>
   );
 }
-

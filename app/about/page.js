@@ -1,4 +1,4 @@
-
+﻿
 import Link from 'next/link';
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function About() {
           <h1>About Us</h1>
           <div className="subtitle">Helping Businesses Grow with SEO, Web Development & Digital Marketing</div>
           <p>
-            I'm Zamin Abbas, a results-driven digital specialist focused on helping businesses grow online through powerful Local SEO strategies, high-performance websites, and data-driven marketing. My approach is simple — increase visibility, drive targeted traffic, and convert visitors into paying customers.
+            I&apos;m Zamin Abbas, a results-driven digital specialist focused on helping businesses grow online through powerful Local SEO strategies, high-performance websites, and data-driven marketing. My approach is simple — increase visibility, drive targeted traffic, and convert visitors into paying customers.
           </p>
           <Link href="/contact" className="cta-btn">
             Work With Me →
@@ -54,7 +54,7 @@ export default function About() {
       <section className="container" style={{ paddingTop: '60px' }}>
         <h2 style={{ textAlign: 'center', color: '#0f172a', marginBottom: '20px' }}>My Approach</h2>
         <p style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto', color: '#475569', lineHeight: '1.8' }}>
-          I believe in combining strategy, design, and performance. Every project starts with research, followed by implementation, optimization, and continuous improvement. My goal is not just to build websites or rank keywords — but to create systems that generate real business results.
+          I believe in combining strategy, design, and performance. Every project starts with research, followed by implementation, optimization, and continuous improvement. My goal is not just to build websites or rank keywords â€” but to create systems that generate real business results.
         </p>
         <div className="approach-grid">
           <div className="step-item">1. Research & Analysis</div>
@@ -68,7 +68,7 @@ export default function About() {
       <section className="cta-section">
         <div className="container">
           <h2>Ready to Grow Your Business?</h2>
-          <p>Let's build a strong online presence that drives real results.</p>
+          <p>Let&apos;s build a strong online presence that drives real results.</p>
           <Link href="/contact" className="btn">
             Get Started →
           </Link>
@@ -77,4 +77,6 @@ export default function About() {
     </main>
   );
 }
+
+
 
